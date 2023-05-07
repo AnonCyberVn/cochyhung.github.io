@@ -1,266 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<!-- META DATA -->
-		<meta charset="UTF-8">
-		<title>DSTAT | Home</title>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="DSTAT | Your best choice for online network and hacking tools, we have best Layer 4 and Layer 7 dstat graphs to provide you best precision for testing your power!">
-		<meta name="keywords" content="dstat, dstat.one, dstat.pro, dstat.cc, cyberhub, cyber-hub.pw, netamp, netamp.org, skypegrab, ip logger, cloudflare resolver, ip to skype, hacking, hacker, hack, network tools, layer7 dstat, layer4, ddos graph, ddos dstat, discord resolver, free dstat, dstat layer4 free, dstat online,layer4,layer4 dstat, graph,layer7,layer7 dstat">
-		<meta name="author" content="RootSec">
-		<!-- BOOTSTRAP CSS -->
-		<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<!-- STYLE CSS -->
-		<link href="../assets/css/style.css" rel="stylesheet" />
-		<link href="../assets/css/scrollbar.css" rel="stylesheet" />
-		<link href="../assets/css/plugins.css" rel="stylesheet" />
-		<!--- FONT-ICONS CSS -->
-		<link href="../assets/css/icons.css" rel="stylesheet" />
-	</head>
-	<body class="app ltr sidebar-gone dark-mode horizontal-hover horizontal">
-		<!-- GLOBAL-LOADER -->
-		<div id="global-loader">
-			<img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
-		</div>
-		<!-- /GLOBAL-LOADER -->
-		<!-- PAGE -->
-		<div class="page">
-			<div class="page-main">
-				<!-- app-Header -->
-				<div class="app-header header sticky">
-					<div class="container-fluid main-container">
-						<div class="d-flex align-items-center">
-							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0);"></a>
-							<div class="responsive-logo">
-								<a href="/" class="header-logo">
-									<img src="../assets/images/brand/logo-3.png" class="mobile-logo logo-1" alt="logo">
-									<img src="../assets/images/brand/logo.png" class="mobile-logo dark-logo-1" alt="logo">
-								</a>
-							</div>
-							<!-- sidebar-toggle-->
-							<a class="logo-horizontal " href="/">
-								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1"
-									alt="logo">
-							</a>
-						</div>	
-					</div>
-				</div>
-				<!-- /app-Header -->
-				<!--APP-SIDEBAR-->
-				<div class="sticky">
-					<div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
-					<aside class="app-sidebar">
-						<div class="side-header">
-							<a class="header-brand1" href="/">
-								<img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-								<img src="../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
-								<img src="../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-								<img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
-							</a>
-							<!-- LOGO -->
-						</div>
-						<div class="main-sidemenu">
-							<ul class="side-menu">
-								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="/"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Home</span></a></li>
-								<li class="slide"><a class="side-menu__item " data-bs-toggle="slide" href="https://github.com/R00tS3c/DDOS-RootSec/"><i class="side-menu__icon fe fe-package"></i><span class="side-menu__label">Archive</span></a></li>
-								<li class="slide">
-									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer4</span><i class="angle fa fa-angle-right"></i></a>
-									<ul id="l4-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">
-									</ul>
-								</li>
-								<li class="slide">
-									<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i class="side-menu__icon fe fe-server"></i><span class="side-menu__label">Layer7</span><i class="angle fa fa-angle-right"></i></a>
-									<ul id="l7-srvlist" style="max-height: 300px;overflow-y: auto;" class="slide-menu">                            
-									</ul>
-								</li>
-								<li class="slide">
-									<a class="side-menu__item" data-bs-toggle="slide" href="/tools"><i class="side-menu__icon fe fe-cloud-lightning"></i><span class="side-menu__label">Tools</span></a>
-								</li>
-							</ul>
-						</div>
-					</aside>
-				</div>
-				<!--/APP-SIDEBAR-->
-				<!--app-content open-->
-				<div class="main-content app-content mt-0">
-					<div class="side-app">
-						<!-- CONTAINER -->
-						<div class="main-container container-fluid">
-							<!-- PAGE-HEADER -->
-							<div class="page-header">
-								<div>
-									<h1 class="page-title">DSTAT</h1>
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item active" aria-current="page">Welcome to DSTAT</li>
-									</ol>
-								</div>							  
-							</div>
-							<!-- PAGE-HEADER END -->
-							<div class="col-xl-12">
-								<div class="row" id="top-d">
-								</div>
-							</div>
-							<!-- ROW-1 -->
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-											<div class="card overflow-hidden">
-												<div class="card-body">
-													<div class="row">
-														<div class="col">
-															<h6 class="">LAYER4 SERVERS</h6>
-															<h3 class="mb-2 number-font" id="l4-count"></h3>
-														</div>
-														<div class="col col-auto">
-															<div class="counter-icon bg-primary-gradient box-shadow-primary brround ms-auto">
-																<i class="icon icon-rocket text-white mb-5 "></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-											<div class="card overflow-hidden">
-												<div class="card-body">
-													<div class="row">
-														<div class="col">
-															<h6 class="">LAYER7 SERVERS</h6>
-															<h3 class="mb-2 number-font" id="l7-count"></h3>
-														</div>
-														<div class="col col-auto">
-															<div class="counter-icon bg-danger-gradient box-shadow-danger brround  ms-auto">
-																<i class="icon icon-rocket text-white mb-5 "></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-											<div class="card overflow-hidden">
-												<div class="card-body">
-													<div class="row">
-														<div class="col">
-															<h6 class="">TOTAL SERVERS</h6>
-															<h3 class="mb-2 number-font" id="total-count"></h3>
-														</div>
-														<div class="col col-auto">
-															<div class="counter-icon bg-secondary-gradient box-shadow-secondary brround ms-auto">
-																<i class="fe fe-server text-white mb-5 "></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-											<div class="card overflow-hidden">
-												<div class="card-body">
-													<div class="row">
-														<div class="col">
-															<h6 class="">TOOLS</h6>
-															<h3 class="mb-2 number-font" id="tools-count"></h3>
-														</div>
-														<div class="col col-auto">
-															<div class="counter-icon bg-success-gradient box-shadow-success brround  ms-auto">
-																<i class="fe fe-box text-white mb-5 "></i>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-								<!-- end row -->
-							<div class="row">
-								<div class="col-xl-6">
-									<div class="card">
-										<div class="card-body">
-											<h4 class="card-title mb-5">News</h4>
-											<ul class="verti-timeline list-unstyled">
-															<li id="news" class="event-list">
-												<div class="event-timeline-dot">
-													<i class="bx bx-right-arrow-circle font-size-18"></i>
-												</div>
-												
-											</li>
-														</ul>
-											<div class="text-center mt-4"><a href="#" class="btn btn-primary waves-effect waves-light btn-sm">View More <i class="mdi mdi-arrow-right ms-1"></i></a></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-6">
-									<div class="card">
-										<div class="card-body">
-											<h4 class="card-title mb-4">Telegram group</h4>
-											<div class="text-center">
-												<div class="avatar-sm mx-auto mb-4">
-													<span class="avatar-title rounded-circle bg-soft font-size-24" style="background:#6259ca5e;font-size: 1.5rem;">
-															<i class="fe fe-send text-primary"></i>
-														</span>
-												</div>
-												<p class="font-16 text-muted mb-2"></p>
-												<h5><a href="#" class="text-dark">SecHub - <span class="text-muted font-16" id="telegram"></span> </a></h5>
-												<p class="text-muted">Join our community group if you want to chat with our users!</p>
-												<a href="https://t.me/realsecgroup" target="_blank" class="text-primary font-16"><button style="margin:0;display:inline-block" class="btn btn-md btn-primary">Join us now!</button></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-12">
-									<div class="row" id="down-d"></div>
-								</div>
-							</div>
-						<!-- end main content-->
-						</div>
-					</div>
-				</div>			
-			</div>
-			<!--app-content end-->
-		</div>
-		<!--/Sidebar-right-->
-		<!-- FOOTER -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row align-items-center flex-row-reverse">
-					<div class="col-md-12 col-sm-12 text-center">
-						Copyright © <span id="year"></span> <a href="javascript:void(0);">RootSec</a>. All rights reserved
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- BACK-TO-TOP -->
-		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
-		<!-- JQUERY JS -->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-		<script src="../assets/plugins/select2/select2.full.min.js"></script>
-		<!-- Sticky js -->
-		<script src="../assets/js/sticky.js"></script>
-		<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
-		<!-- APEXCHART JS -->
-		<script src="../assets/js/apexcharts.js"></script>
-		<script src="../assets/js/swither-styles.js"></script>
-		<script src="../assets/js/themeColors.js"></script>
-		<!-- CUSTOM JS -->
-		<script src="../assets/js/custom.js"></script>
-		<script src="../assets/js/menu.js"></script>
-		<!-- Switcher js -->
-		<script src="../assets/switcher/js/switcher.js"></script>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZL517TCJH"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-ZZL517TCJH');
-		</script>
-	</body>
+<html>
+<head>
+<title>Mr.Dempsey was here</title> <link rel="icon" type="image/x-icon" href="https://i.ibb.co/TvgHfX0/Thi-t-k-ch-a-c-t-n-1-removebg-preview.png">
+<style>
+            body {
+                min-height: 50vh;
+                background-color: #000;
+                /* background-image: url(https://phoneky.co.uk/thumbs/screensavers/down/nature/electro_247bu16z.gif); */
+                background-image: url(https://thumbs.gfycat.com/ClearWelllitEmu-max-1mb.gif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+            }
+            .logo {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: url(https://i.ibb.co/jyCCfPM/bloggif-61177e30a6491.gif);
+                /* background:url(https://acegif.com/wp-content/gifs/dancing-pig-13.gif); */
+                background-size: cover;
+                border-radius: 70%;
+            }
+</style>
+</head>
+<script type="application/javascript" src="https://nathanprinsley-files.prinsh.com/data-1/js/deface(18-01).js"></script><span id="s0" style="position: absolute; top: 528.2px; font-family: Times; font-size: 9px; color: rgb(221, 221, 255); left: 1153.37px;">*</span><span id="s1" style="position: absolute; top: 468px; font-family: Times; font-size: 20px; color: rgb(221, 221, 255); left: 654.817px;">*</span><span id="s2" style="position: absolute; top: 277.4px; font-family: &quot;Arial Black&quot;; font-size: 8px; color: rgb(240, 255, 255); left: 510.827px;">*</span><span id="s3" style="position: absolute; top: 490px; font-family: Times; font-size: 10px; color: rgb(240, 255, 255); left: 311.381px;">*</span><span id="s4" style="position: absolute; top: 509.6px; font-family: &quot;Arial Black&quot;; font-size: 12px; color: rgb(240, 255, 255); left: 1100.79px;">*</span><span id="s5" style="position: absolute; top: 630.8px; font-family: Times; font-size: 11px; color: rgb(170, 170, 204); left: 104.55px;">*</span><span id="s6" style="position: absolute; top: 6.48px; font-family: &quot;Arial Black&quot;; font-size: 18px; color: rgb(221, 221, 255); left: 284.342px;">*</span><span id="s7" style="position: absolute; top: 426.2px; font-family: Times; font-size: 9px; color: rgb(204, 204, 221); left: 860.701px;">*</span><span id="s8" style="position: absolute; top: 431px; font-family: &quot;Comic Sans MS&quot;; font-size: 10px; color: rgb(243, 243, 243); left: 108.285px;">*</span><span id="s9" style="position: absolute; top: 305.4px; font-family: Times; font-size: 8px; color: rgb(240, 255, 255); left: 510.441px;">*</span><span id="s10" style="position: absolute; top: 95.4px; font-family: &quot;Arial Narrow&quot;; font-size: 8px; color: rgb(221, 221, 255); left: 82.1043px;">*</span><span id="s11" style="position: absolute; top: 530.6px; font-family: &quot;Arial Black&quot;; font-size: 12px; color: rgb(170, 170, 204); left: 653.48px;">*</span><span id="s12" style="position: absolute; top: 587.4px; font-family: &quot;Arial Narrow&quot;; font-size: 8px; color: rgb(243, 243, 243); left: 977.207px;">*</span><span id="s13" style="position: absolute; top: 217.4px; font-family: &quot;Arial Black&quot;; font-size: 18px; color: rgb(204, 204, 221); left: 329.837px;">*</span><span id="s14" style="position: absolute; top: 11.76px; font-family: Times; font-size: 14px; color: rgb(221, 221, 255); left: 73.2354px;">*</span><span id="s15" style="position: absolute; top: 145.4px; font-family: Times; font-size: 8px; color: rgb(221, 221, 255); left: 121.748px;">*</span><span id="s16" style="position: absolute; top: 24px; font-family: Times; font-size: 10px; color: rgb(243, 243, 243); left: 932.112px;">*</span><span id="s17" style="position: absolute; top: 224.28px; font-family: &quot;Comic Sans MS&quot;; font-size: 21px; color: rgb(221, 221, 255); left: 1146.18px;">*</span><span id="s18" style="position: absolute; top: 98.28px; font-family: &quot;Comic Sans MS&quot;; font-size: 13px; color: rgb(221, 221, 255); left: 287.018px;">*</span><span id="s19" style="position: absolute; top: 97.92px; font-family: &quot;Arial Narrow&quot;; font-size: 17px; color: rgb(240, 255, 255); left: 783.731px;">*</span><span id="s20" style="position: absolute; top: 480.6px; font-family: &quot;Comic Sans MS&quot;; font-size: 17px; color: rgb(240, 255, 255); left: 950.273px;">*</span><span id="s21" style="position: absolute; top: 218.6px; font-family: &quot;Arial Narrow&quot;; font-size: 12px; color: rgb(243, 243, 243); left: 413.975px;">*</span><span id="s22" style="position: absolute; top: 488px; font-family: Times; font-size: 15px; color: rgb(240, 255, 255); left: 618.52px;">*</span><span id="s23" style="position: absolute; top: 533.2px; font-family: &quot;Arial Narrow&quot;; font-size: 14px; color: rgb(221, 221, 255); left: 16.1656px;">*</span><span id="s24" style="position: absolute; top: 476.2px; font-family: &quot;Arial Narrow&quot;; font-size: 19px; color: rgb(221, 221, 255); left: 152.77px;">*</span><span id="s25" style="position: absolute; top: 473px; font-family: &quot;Arial Black&quot;; font-size: 10px; color: rgb(240, 255, 255); left: 1169.69px;">*</span><span id="s26" style="position: absolute; top: 537.8px; font-family: Times; font-size: 11px; color: rgb(170, 170, 204); left: 429.583px;">*</span><span id="s27" style="position: absolute; top: 370px; font-family: Times; font-size: 15px; color: rgb(221, 221, 255); left: 140.273px;">*</span><span id="s28" style="position: absolute; top: 491.8px; font-family: &quot;Comic Sans MS&quot;; font-size: 11px; color: rgb(240, 255, 255); left: 710.958px;">*</span><span id="s29" style="position: absolute; top: 544.2px; font-family: &quot;Comic Sans MS&quot;; font-size: 19px; color: rgb(221, 221, 255); left: 770.271px;">*</span><span id="s30" style="position: absolute; top: 140.16px; font-family: &quot;Arial Black&quot;; font-size: 16px; color: rgb(240, 255, 255); left: 119.201px;">*</span><span id="s31" style="position: absolute; top: 24.48px; font-family: &quot;Comic Sans MS&quot;; font-size: 12px; color: rgb(243, 243, 243); left: 25.4945px;">*</span><span id="s32" style="position: absolute; top: 561.8px; font-family: &quot;Arial Black&quot;; font-size: 21px; color: rgb(240, 255, 255); left: 628.15px;">*</span><span id="s33" style="position: absolute; top: 61.44px; font-family: Times; font-size: 16px; color: rgb(240, 255, 255); left: 50.6667px;">*</span><span id="s34" style="position: absolute; top: 332.2px; font-family: &quot;Arial Narrow&quot;; font-size: 9px; color: rgb(221, 221, 255); left: 74.8217px;">*</span><span id="s35" style="position: absolute; top: 527.4px; font-family: &quot;Comic Sans MS&quot;; font-size: 18px; color: rgb(243, 243, 243); left: 679.107px;">*</span><center><div id="q">.
+<body align="center" oncontextmenu="return false" bgcolor="black"><div class="error">  <div class="flex-center position-ref full-height"> <div class="content">
+<div class="text"><font color="white">
+<a href="https://ibb.co/Wz3gXYX"><img src="https://i.ibb.co/Wz3gXYX/Thi-t-k-ch-a-c-t-n-1-removebg-preview.png" alt="Thi-t-k-ch-a-c-t-n-1-removebg-preview" border="0"></a>
+<div class="middle">
+<code><i><font size="8" color="#FF0000">Hacked By Mr.Dempsey</h1><br><wbr></i>
+<b><font color="#FFFFFF" size="6px">You only live once, but if you do it right, once is enough</font><br><wbr>
+<font face="Courier New"color="#AAAAAA" size="5px">Twitter: @AnonCyberVn</font>
+<br><wbr>
+<marquee width="700"><font size="5" color="#00FF00">Thanks to: Eo9ti - ALX - Neko - TEAMNYSHACKED</marquee></pre></font>
+<br><wbr>
+<audio src="https://b.top4top.io/m_2659yhnjo1.mp3" loop="1" autoplay="1">
+</div>
+</body>
 </html>
